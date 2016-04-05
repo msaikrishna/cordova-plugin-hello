@@ -41,5 +41,12 @@
   <platform name="wp7">
     <source-file src="src/wp7/Hello.cs"/>
   </platform>
-
-</plugin>
+  <platform name="wp8">
+    <source-file src="src/wp8/Hello.cs"/>
+    <config-file target="config.xml" parent="/*">
+            <feature name="Hello">
+                <param name="wp-package" value="Hello"/>
+            </feature>
+    </config-file>
+  </platform>
+  </plugin>
